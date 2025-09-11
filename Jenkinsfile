@@ -15,8 +15,8 @@ pipeline {
         stage('Build & Deploy') {
             steps {
                 dir('Fullstack-app') {
-                    sh 'docker compose -f docker-compose.yml build --no-cache'
-                    sh 'docker compose -f docker-compose.yml up -d'
+                    sh 'docker-compose -f docker-compose.yml build --no-cache'
+                    sh 'docker-compose -f docker-compose.yml up -d'
                 }
             }
         }
