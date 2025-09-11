@@ -4,7 +4,7 @@ function Home() {
   const [users, setUsers] = useState([
     { id: 1, name: "Rakesh" },
     { id: 2, name: "Chandu" },
-    { id: 3, name: "Shankar" },
+    { id: 3, name: "Ramesh" },
   ]);
 
   useEffect(() => {
