@@ -36,6 +36,7 @@ function Home() {
       </h1>
 
           <h1>Changes to reflect </h1>
+                <h1>Changes to reflect </h1>
 
       <ul
         style={{
