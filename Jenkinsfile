@@ -21,15 +21,12 @@ pipeline {
             }
         }
     }
-     post {
-        success {
-            sh '''
-                docker system prune -a -f
-                docker volume prune -f
-            '''
-        }
-        failure {
-            echo 'Build failed. Skipping cleanup to allow debugging.'
-        }
+   post {
+    always {
+        sh '''
+            docker system prune -a -f
+            docker volume prune -f
+        '''
     }
+ }
 }
